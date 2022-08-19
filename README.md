@@ -1,4 +1,4 @@
-# haskell-template
+# haskell-progression
 
 Get a Haskell development environment up and running quickly, as long as Nix is available on your system[^windows].
 
@@ -39,8 +39,8 @@ git clone <your-clone-url>
 cd your-project
 NAME=myproject
 
-git mv haskell-template.cabal ${NAME}.cabal
-nix run nixpkgs#sd -- haskell-template ${NAME} * */*
+git mv haskell-progression.cabal ${NAME}.cabal
+nix run nixpkgs#sd -- haskell-progression ${NAME} * */*
 git add . && git commit -m rename
 ```
 
@@ -50,4 +50,4 @@ git add . && git commit -m rename
 - Run `treefmt` in nix shell to autoformat the project. This uses [treefmt](https://github.com/numtide/treefmt), which uses `./treefmt.toml` (where fourmolu and nixpkgs-fmt are specified).
 - Run `bin/hoogle` to start Hoogle with packages in your cabal file.
 - Run `bin/test` to run the test suite.
-- Run the application without installing: `nix run github:srid/haskell-template` (or `nix run .` from checkout)
+- Run the application without installing: `nix run github:srid/haskell-progression` (or `nix run .` from checkout)
