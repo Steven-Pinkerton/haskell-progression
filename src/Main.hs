@@ -1,15 +1,7 @@
 module Main where
 
-import Lib qualified
-import Main.Utf8 qualified as Utf8
+import Progression.P01 qualified
 
-{- |
- Main entry point.
-
- The `bin/run` script will invoke this function.
--}
 main :: IO ()
 main = do
-  -- For withUtf8, see https://serokell.io/blog/haskell-with-utf8
-  Utf8.withUtf8 $ do
-    putTextLn Lib.hello
+  Progression.P01.main

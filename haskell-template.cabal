@@ -83,13 +83,9 @@ common shared
     , directory
     , filepath
     , mtl
-    , optics-core
-    , profunctors
     , relude
-    , shower
     , text
     , time
-    , with-utf8
 
   hs-source-dirs:     src
   other-modules:      Lib
