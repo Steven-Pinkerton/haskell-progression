@@ -27,7 +27,7 @@ module Progression.P01 where
 
 main :: IO ()
 main = do
-  let name = "Joe"
-      greeting = "Hello, "
+  let name :: String = "Joe"
+      greeting :: String = "Hello, "
       message = undefined
   putStrLn message
