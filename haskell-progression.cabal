@@ -6,7 +6,6 @@ copyright:          2022 Sridhar Ratnakumar
 maintainer:         srid@srid.ca
 author:             Sridhar Ratnakumar
 category:           Web
-
 extra-source-files:
   LICENSE
   README.md
