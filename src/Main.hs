@@ -1,7 +1,7 @@
 module Main where
 
-import Progression.P01 qualified
+import Progression.P02 qualified
 
 main :: IO ()
 main = do
-  Progression.P01.main
+  Progression.P02.main
