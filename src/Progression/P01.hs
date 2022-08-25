@@ -26,13 +26,22 @@ program to your instructor.
 module Progression.P01 where
 
 
+printGreeting' :: IO ()
+printGreeting' = 
+  putStrLn ("Hello, Jane" <> "\n" <> "Hello Jon")
+
+
+
+
+{-I prefer this implementation for ease of adding complexity to it and it allows for arbitary sizes of input and it will work well.
+
 printGreeting' :: [String] -> IO ()
 printGreeting' (x:xs) = do
   putStrLn ("Hello, " <> x)
   printGreeting' xs
 
 printGreeting' x = do 
-  putStrLn ("Hello, " <> show x)
+  putStrLn ("Hello, " <> show x) -}
 
 {- A secondary implementation that could work but is more annoying due to the need to modify multiple variables rather then one list is.
 
@@ -47,5 +56,4 @@ putStrLn message
 
 main :: IO()
 main = do
-  let names = ["Joe", "Jane"]
-  printGreeting' names
+  printGreeting'
