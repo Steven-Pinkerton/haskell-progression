@@ -14,12 +14,15 @@
 -}
 module Progression.P02 where
 
+-- | Make a greeting message to greet the given person
 mkGreeting :: String -> String
 mkGreeting name = "Hello, " <> name
 
+-- | Print out a message greeting the given person
 greetPerson :: String -> IO ()
 greetPerson name = putStrLn (mkGreeting name)
 
+-- | The file containing the list of persons concerned.
 peopleFile :: FilePath
 peopleFile = "src/Progression/P02_data.txt"
 
@@ -28,6 +31,7 @@ main = do
   persons :: [String] <- undefined -- TODO: Read `peopleFile` such that `persons` is a list of their names
   greetPeople persons
 
+-- | Print out messages greeting everybody in the given list.
 greetPeople :: [String] -> IO ()
 greetPeople persons =
   -- TODO: Define `greetPeople` using `greetPerson`
