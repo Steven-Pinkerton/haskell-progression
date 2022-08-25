@@ -1,6 +1,6 @@
 {- |
 
-- [ ] Modify this file so it prints "Hello, Joe"
+- [x] Modify this file so it prints "Hello, Joe"
 
 Haskell concepts to lookup:
   - Let binding
@@ -10,10 +10,10 @@ Haskell concepts to lookup:
 Hint:
   - Replace the `undefined` with an appropriate value
 
-- [ ] Now greet two people, Joe and Jane. It should greet them in two lines separately.
-- [ ] Understand the DRY principle; do you spot DRY in your implementation?
+- [x] Now greet two people, Joe and Jane. It should greet them in two lines separately.
+- [x] Understand the DRY principle; do you spot DRY in your implementation?
       https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
-- [ ] Refactor your implementation to avoid DRY
+- [x] Refactor your implementation to avoid DRY
   - What do you understand of the word "abstraction"?
     https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)
 
@@ -25,9 +25,29 @@ program to your instructor.
 -}
 module Progression.P01 where
 
-main :: IO ()
-main = do
-  let name :: String = "Joe"
+
+printGreeting' :: [String] -> IO ()
+printGreeting' (x:xs) = do
+  putStrLn ("Hello, " <> x)
+  printGreeting' xs
+
+printGreeting' x = do 
+  putStrLn ("Hello, " <> show x)
+
+printGreeting' [] = putStrLn "There are no persons to greet"
+
+{- A secondary implementation that could work but is more annoying due to the need to modify multiple variables rather then one list is.
+
+let nameA :: String = "Joe"
+      nameB :: String = "Jane"
       greeting :: String = "Hello, "
-      message = greeting <> name 
-  putStrLn message
+      message = greeting <> nameA <> "\n" <> greeting <> nameB
+putStrLn message
+
+-}
+
+
+main :: IO()
+main = do
+  let names = ["Joe", "Jane"]
+  printGreeting' names
