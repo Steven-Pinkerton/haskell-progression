@@ -30,9 +30,14 @@ greetPerson name = putStrLn (mkGreeting name)
 peopleFile :: FilePath
 peopleFile = "src/Progression/P02_data.txt"
 
+readPeopleFile :: IO [Person]
+readPeopleFile =
+  -- TODO: Read `peopleFile` such that `persons` is a list of their names
+  undefined
+
 main :: IO ()
 main = do
-  persons :: [Person] <- undefined -- TODO: Read `peopleFile` such that `persons` is a list of their names
+  persons <- readPeopleFile
   greetPeople persons
 
 -- | Print out messages greeting everybody in the given list.
