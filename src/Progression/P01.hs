@@ -34,8 +34,6 @@ printGreeting' (x:xs) = do
 printGreeting' x = do 
   putStrLn ("Hello, " <> show x)
 
-printGreeting' [] = putStrLn "There are no persons to greet"
-
 {- A secondary implementation that could work but is more annoying due to the need to modify multiple variables rather then one list is.
 
 let nameA :: String = "Joe"
