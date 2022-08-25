@@ -26,9 +26,9 @@ program to your instructor.
 module Progression.P01 where
 
 
-printGreeting' :: IO ()
-printGreeting' = 
-  putStrLn ("Hello, Jane" <> "\n" <> "Hello, Jon")
+printGreeting' :: String -> IO ()
+printGreeting' x = 
+  putStrLn ("Hello, " <> x)
 
 
 
@@ -56,4 +56,4 @@ putStrLn message
 
 main :: IO()
 main = do
-  printGreeting'
+  printGreeting' "Jon"
