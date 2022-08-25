@@ -2,7 +2,7 @@
     In this progression we will do something more complex than P01. We will deal
     with IO and lists.
 
-    In P01, we greeted Joe and Jane. In P01, we will greet *arbitrary* number of
+    In P01, we greeted Joe and Jane. In P02, we will greet *arbitrary* number of
     people. Their names will come from a text file.
 
     - [ ] Implement the two TODO (undefined) below.
