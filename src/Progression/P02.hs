@@ -14,12 +14,15 @@
 -}
 module Progression.P02 where
 
+newtype Person = Person {unPerson :: String}
+  deriving stock (Eq)
+
 -- | Make a greeting message to greet the given person
-mkGreeting :: String -> String
-mkGreeting name = "Hello, " <> name
+mkGreeting :: Person -> String
+mkGreeting name = "Hello, " <> unPerson name
 
 -- | Print out a message greeting the given person
-greetPerson :: String -> IO ()
+greetPerson :: Person -> IO ()
 greetPerson name = putStrLn (mkGreeting name)
 
 -- | The file containing the list of persons concerned.
@@ -28,11 +31,11 @@ peopleFile = "src/Progression/P02_data.txt"
 
 main :: IO ()
 main = do
-  persons :: [String] <- undefined -- TODO: Read `peopleFile` such that `persons` is a list of their names
+  persons :: [Person] <- undefined -- TODO: Read `peopleFile` such that `persons` is a list of their names
   greetPeople persons
 
 -- | Print out messages greeting everybody in the given list.
-greetPeople :: [String] -> IO ()
+greetPeople :: [Person] -> IO ()
 greetPeople persons =
   -- TODO: Define `greetPeople` using `greetPerson`
   undefined
