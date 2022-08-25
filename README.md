@@ -1,6 +1,6 @@
 # haskell-progression
 
-WIP: Learn Haskell from scratch by progressing toward building stuff.
+WIP: Learn Haskell from scratch by progressing toward building stuff. Learn by doing.
 
 See https://github.com/srid/haskell-template for dev instructions. Then start from [src/Progression/P01.hs](src/Progression/P01.hs).
 
@@ -10,4 +10,4 @@ Open a PR on GitHub so your instructor can review the diff and give feedback. Th
 
 ## Tasks
 
-- [ ] Don't hard `P0?` in src/Main.hs. Use `.ghcid` maybe.
+- [ ] Don't hard `P0?` in src/Main.hs. Use `.ghcid`, maybe.
