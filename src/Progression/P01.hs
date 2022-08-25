@@ -28,7 +28,7 @@ module Progression.P01 where
 
 printGreeting' :: IO ()
 printGreeting' = 
-  putStrLn ("Hello, Jane" <> "\n" <> "Hello Jon")
+  putStrLn ("Hello, Jane" <> "\n" <> "Hello, Jon")
 
 
 
