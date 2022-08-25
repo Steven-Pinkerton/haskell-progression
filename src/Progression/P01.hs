@@ -57,3 +57,4 @@ putStrLn message
 main :: IO()
 main = do
   printGreeting' "Jon"
+  printGreeting' "Jane"
