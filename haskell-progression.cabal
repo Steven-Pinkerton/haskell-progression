@@ -75,4 +75,9 @@ common shared
 executable haskell-progression
   import:           shared
   main-is:          Main.hs
+  other-modules:
+    Progression.P01
+    Progression.P02
+    Progression.P03
+
   default-language: Haskell2010
