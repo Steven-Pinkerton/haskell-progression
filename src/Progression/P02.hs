@@ -42,7 +42,7 @@ peopleFile = "src/Progression/P02_data.txt"
 -- TODO: Read `peopleFile` such that `persons` is a list of their names
 readPeopleFile :: IO [Person]
 readPeopleFile = do
-                 file <- readFile "src/Progression/p02_data.txt"
+                 file <- readFile "src/Progression/P02_data.txt"
                  let stringFile = lines file
                  let personFile = fmap Person stringFile
                  return personFile
