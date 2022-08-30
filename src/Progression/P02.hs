@@ -50,10 +50,10 @@ readPeopleFile = do
 -- | Print out messages greeting everybody in the given list.
 -- TODO: Define `greetPeople` using `greetPerson`
 greetPeople :: [Person] -> IO ()
-greetPeople [] = putStrLn "There are no more pepole to greet"
+greetPeople [] = putStrLn "There are no pepole to greet"
 greetPeople (x:xs) = do
-  greetPerson x 
-  greetPeople xs
+  mapM_ greetPerson (x:xs)
+  
 
 
 main :: IO ()
