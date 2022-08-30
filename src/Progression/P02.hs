@@ -8,6 +8,7 @@
     - [ ] Implement the two TODO (undefined) below.
 
     Haskell concepts to apply:
+    - newtype
     - IO
     - Lists
     - Recursion *or* list combinators (maps, traversals, etc.)
