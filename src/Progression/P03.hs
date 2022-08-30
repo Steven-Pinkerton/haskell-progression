@@ -8,9 +8,9 @@
     produce HTML and open that in the web browser. This progression is about
     taking what we did in P02 and displaying that in the browser.
 
-    - [ ] Implement `renderHtml`
+    - [] Implement `renderHtml`
         - Open `output.html` in your web browser and confirm the output to be expected.
-    - [ ] Refactor `h1` and `html` to eliminate DRY violation.
+    - [] Refactor `h1` and `html` to eliminate DRY violation.
 -}
 module Progression.P03 where
 
